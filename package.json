@@ -1,28 +1,37 @@
 {
-  "name": "webpack_demo1",
+  "name": "wp_hot_replacement_1",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "webpack热更新demo1",
+  "main": "webpack.config.js",
   "scripts": {
-    "start": "export NODE_ENV=development && node_modules/.bin/webpack-dev-server",
-    "build": "export NODE_ENV=production  && node_modules/.bin/webpack",
+    "start": "webpack-dev-server",
+    "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kuanke/wp_hot_replacement_1.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kuanke/wp_hot_replacement_1/issues"
+  },
+  "homepage": "https://github.com/kuanke/wp_hot_replacement_1#readme",
   "devDependencies": {
+    "clean-webpack-plugin": "^0.1.17",
     "css-loader": "^0.28.7",
-    "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^1.1.5",
     "html-loader": "^0.5.1",
     "html-webpack-plugin": "^2.30.1",
     "style-loader": "^0.19.0",
     "url-loader": "^0.6.2",
-    "webpack": "^3.8.1",
-    "webpack-dev-server": "^2.9.4"
+    "webpack": "^3.9.1",
+    "webpack-dev-server": "^2.9.5"
   },
   "dependencies": {
-    "jquery": "^3.2.1"
+    "jquery": "^3.2.1",
+    "lodash": "^4.17.4"
   }
 }
