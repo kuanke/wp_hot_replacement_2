@@ -1,0 +1,2 @@
+# wp_hot_replacement_2
+webpack热更新demo2
